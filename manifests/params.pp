@@ -45,7 +45,7 @@ class influxdb::params {
   }
 
   $config_file = $::operatingsystem ? {
-    default => '/opt/influxdb/current/config.toml',
+    default => '/opt/influxdb/shared/config.toml',
   }
 
   $config_file_mode = $::operatingsystem ? {
